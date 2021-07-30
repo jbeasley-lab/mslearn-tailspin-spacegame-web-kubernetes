@@ -57,9 +57,6 @@ stages:
           steps:
           - download: current
             artifact: manifests
-
-    variables:
-    - group: Release
     steps:
     - task: AzureWebAppContainer@1
       inputs:
@@ -88,4 +85,3 @@ stages:
         containers: |
           $(RegistryName)/$(webRepository):$(tag)
           $(RegistryName)/$(leaderboardRepository):$(tag)
-       
