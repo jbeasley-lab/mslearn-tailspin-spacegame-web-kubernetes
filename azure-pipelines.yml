@@ -4,6 +4,8 @@ trigger:
 variables:
   buildConfiguration: 'Release'
   webRepository: 'web'
+  leaderboardRepository: 'leaderboard'
+  imagePullSecret: 'secret'
   tag: '$(Build.BuildId)'
 
 stages:
